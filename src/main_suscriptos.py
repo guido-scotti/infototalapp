@@ -49,43 +49,113 @@ mensaje.set_content("Informe Diario INFO TOTAL – Tu servicio de noticias.")
 
 mensaje.add_alternative(f"""
 <html>
-  <body style="font-family: Arial, sans-serif; font-size: 16px; color: #333; line-height: 1.6;">
-    <h1 style="color:#004aad;text-align:center;">INFO TOTAL 📰</h1>
-    <h2 style="text-align:center;">Tu resumen inteligente para arrancar el día informado</h2>
+  <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+              Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f3f4f6;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f3f4f6; padding: 20px 0;">
+      <tr>
+        <td align="center">
+          <table width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: #ffffff;">
+                    <!-- Header -->
+            <tr>
+              <td style="background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); padding: 40px 30px; color: #ffffff;">
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <h1 style="margin: 0 0 8px 0; font-size: 32px; font-weight: 700; color: #ffffff;">INFO TOTAL</h1>
+                        <p style="margin: 0; font-size: 16px; color: #dbeafe;">Tu resumen inteligente para arrancar el día informado</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 20px;">
+                        <p style="margin: 0; font-size: 14px; color: #dbeafe;">📅 {hoy} - Edición Matutina</p>
+                      </td>
+                    </tr>
+                  </table>
+              </td>
+            </tr>
 
-    <div style="text-align:center; margin-bottom: 40px;">
-      <h2 style="color:#004aad;">📈 Nuestra comunidad de Noticias</h2>
-      <p>• Informe AM con panorama político, dólar, mercados, deportes, cultura, mundo y más<br>
-         • Sin publicidad, sin ruido, solo información filtrada y curada en tiempo real</p>
-    </div>
+            <tr>
+              <td style="padding: 30px;">
+                <h2 style="margin: 0 0 12px 0; font-size: 22px; font-weight: 600; color: #111827;">¡Buenos días, Suscriptor!</h2>
+                <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4b5563;">
+                  Acá está tu resumen personalizado de las noticias más relevantes del día. 
+                  Hemos seleccionado cuidadosamente 6 artículos de las principales fuentes informativas.
+                </p>
+              </td>
+            </tr>                
+            <tr>
+              <td style="padding: 0 30px 30px 30px;">
+                <table width="100%" cellpadding="0" cellspacing="0" 
+                  style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+                  border-radius: 8px; border: 1px solid #86efac;">
+                  <tr>
+                    <td style="padding: 24px;">
+                      <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td>
+                            <h2 style="margin: 0 0 20px 0; font-size: 20px; font-weight: 600; color: #111827;">
+                              💵 Cotización del Dólar
+                            </h2>
+                          </td>
+                          <td align="right">
+                            <p style="margin: 0; font-size: 14px; color: #4b5563;">{hoy}</p>
+                          </td>
+                        </tr>
+                        {cotizaciones_html}
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
-    <p style="font-size:17px;">Cada mañana, recibis en tu correo un informe seleccionado con lo que realmente mueve a la Argentina:
-      <b style="color:#004aad" text-align:"center">política, economía, mercados, dólar, deportes, cultura y panorama internacional.</b>
-    </p>
-
-    <div style="margin-top:25px;">
-      <h3>💵 Cotizaciones del Dólar</h3>
-      <table style="border-collapse:collapse;width:100%;max-width:600px;">
-        <thead><tr style="background-color:#e0f0ff;">
-          <th style="border:1px solid #ccc;padding:10px;">Tipo</th>
-          <th style="border:1px solid #ccc;padding:10px;">Compra</th>
-          <th style="border:1px solid #ccc;padding:10px;">Venta</th>
-        </tr></thead><tbody>
-          {cotizaciones_html}
-        </tbody>
-      </table>
-    </div>
-
-    <div style="margin-top:30px;">
-      <h3>🗞️ Últimas Noticias Seleccionadas</h3>
-      {noticias_html}
-    </div>
-
-    <hr style="margin:40px 0;border:none;border-top:1px solid #ccc;">
-    <p style="font-size:13px;color:#888;text-align:center;">
-      Este correo forma parte del servicio INFO TOTAL.<br>
-      Generado automáticamente {hoy}. Este canal/medio se dedica exclusivamente a la recopilación y difusión de noticias provenientes de diversas fuentes públicas. No reclamamos autoría sobre el contenido compartido, el cual pertenece a sus respectivos autores y medios originales. Todo el material es utilizado con fines informativos y educativos, sin intención de infringir derechos de autor. Si algún medio o autor considera inapropiada la difusión de su contenido, puede solicitar su remoción inmediata..
-    </p>
+            <tr>
+              <td style="padding: 30px;">
+                <h3 style="margin: 0 0 16px 0; font-size: 20px; font-weight: 600; color: #111827;">
+                  🗞️ Últimas Noticias Seleccionadas
+                </h3>
+                {noticias_html}
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0 30px 30px 30px;">
+                <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 16px;">
+                  <tr>
+                    <td align="center">
+                      <p style="margin: 0; font-size: 14px; color: #4b5563;">
+                        <strong>¿Preguntas o comentarios?</strong> Contáctanos en 
+                        <a href="mailto:info@infototalapp.com" style="color: #2563eb; text-decoration: none;">info@infototalapp.com</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 30px; border-top: 1px solid #e5e7eb; 
+                background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+                color: #ffffff;"">
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center">
+                        <p style="margin: 0 0 8px 0; font-size: 13px; color: #ffffff;">Has recibido este correo porque estás suscrito a <strong>Info Total</strong></p>
+                        <p style="margin: 0 0 16px 0; font-size: 13px; color: #ffffff;">© 2025 <strong>Info Total</strong>. Todos los derechos reservados.</p>
+                        <p style="margin: 0; font-size: 13px;">
+                          <a href="#" style="color: #22d3ee; text-decoration: none;">Preferencias</a> 
+                          <span style="color: #9ca3af;"> • </span>
+                          <a href="#" style="color: #22d3ee; text-decoration: none;">Administrar Suscripción</a>
+                          <span style="color: #9ca3af;"> • </span>
+                          <a href="#" style="color: #22d3ee; text-decoration: none;">Cancelar Suscripción</a>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+              </td>
+            </tr>
+        </table>
+      </td>
+      </tr>
+    </table>
   </body>
 </html>
 """, subtype='html')

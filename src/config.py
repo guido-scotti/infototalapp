@@ -9,9 +9,10 @@ API_KEY_BREVO = os.getenv("BREVO_API_KEY") # trae la API key desde el archivo .e
 EMAIL_ORIGEN = os.getenv("EMAIL_ORIGEN", "info@infototalapp.com") # trae el email origen desde el archivo .env 
 
 LISTA_SUSCRIPTOS = [
-    "scottigui@gmail.com"
-    # "mariano.swidzinski@gmail.com",
-    # "aleciojoel@gmail.com"
+    "scottigui@gmail.com",
+    #"mariano.swidzinski@gmail.com",
+    #"aleciojoel@gmail.com"
+    #"joel.alecio@catapultsports.com"
 ]
 
 LISTA_NO_SUSCRIPTOS = [
@@ -27,23 +28,23 @@ rss_urls = {
     "Ambito Financiero" : "https://www.ambito.com/rss/pages/home.xml",
     "Ambito Financiero - Economía" : "https://www.ambito.com/rss/pages/economia.xml",
     "Ambito Financiero - Finanzas" : "https://www.ambito.com/rss/pages/finanzas.xml",    
-    "La Política Online - Noticias": "http://www.lapoliticaonline.com.ar/files/rss/ultimasnoticias.xml",
-    "La Política Online - Economía": "http://www.lapoliticaonline.com.ar/files/rss/economia.xml",
-    "La Política Online - Ciudad": "http://www.lapoliticaonline.com.ar/files/rss/ciudad.xml",
-    "La Política Online - Provincia": "http://www.lapoliticaonline.com.ar/files/rss/provincia.xml",
-    "Página 12": "https://www.pagina12.com.ar/rss/portada",    
-    "Clarín": "https://www.clarin.com/rss/politica/",  
-    "El Cronista": "https://www.cronista.com/files/rss/news.xml",
-    "La Gaceta (Tucumán)": "https://www.lagaceta.com.ar/rss",
-    "Misiones Online": "https://www.misionesonline.net/feed",
-    "Diario de Cuyo": "https://www.diariodecuyo.com.ar/rss/rss.xml",
-    "El Intransigente": "https://www.elintransigente.com/rss",
-    "TN – Todo Noticias": "https://tn.com.ar/rss.xml",
-    "TodoAgro – Noticias Agrarias": "https://www.todoagro.com.ar/noticias/feed/",
-    "Noticias Argentinas (NA)": "https://noticiasargentinas.com/rss",
-    "El Ciudadano (Rosario)": "https://www.elciudadanoweb.com/feed/",
-    "Crónica": "https://www.diariocronica.com.ar/rss/actualidad/",
-    "Noticias Ambientales": "https://noticiasambientales.com/rss",
+    #"La Política Online - Noticias": "http://www.lapoliticaonline.com.ar/files/rss/ultimasnoticias.xml",
+    #"La Política Online - Economía": "http://www.lapoliticaonline.com.ar/files/rss/economia.xml",
+    #"La Política Online - Ciudad": "http://www.lapoliticaonline.com.ar/files/rss/ciudad.xml",
+    #"La Política Online - Provincia": "http://www.lapoliticaonline.com.ar/files/rss/provincia.xml",
+    #"Página 12": "https://www.pagina12.com.ar/rss/portada",    
+    #"Clarín": "https://www.clarin.com/rss/politica/",  
+    #"El Cronista": "https://www.cronista.com/files/rss/news.xml",
+    #"La Gaceta (Tucumán)": "https://www.lagaceta.com.ar/rss",
+    #"Misiones Online": "https://www.misionesonline.net/feed",
+    #"Diario de Cuyo": "https://www.diariodecuyo.com.ar/rss/rss.xml",
+    #"El Intransigente": "https://www.elintransigente.com/rss",
+    #"TN – Todo Noticias": "https://tn.com.ar/rss.xml",
+    #"TodoAgro – Noticias Agrarias": "https://www.todoagro.com.ar/noticias/feed/",
+    #"Noticias Argentinas (NA)": "https://noticiasargentinas.com/rss",
+    #"El Ciudadano (Rosario)": "https://www.elciudadanoweb.com/feed/",
+    #"Crónica": "https://www.diariocronica.com.ar/rss/actualidad/",
+    #"Noticias Ambientales": "https://noticiasambientales.com/rss",
     # #Segmento Cultura -----------------------------------------------
     #"Clarin - cultura": "https://www.clarin.com/rss/cultura/",
     #"Ambito Financiero - Espectáculos" : "https://www.ambito.com/rss/pages/espectaculos.xml",
