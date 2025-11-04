@@ -57,7 +57,7 @@ mensaje.add_alternative(f"""
           <table width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: #ffffff;">
                     <!-- Header -->
             <tr>
-              <td style="background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); padding: 40px 30px; color: #ffffff;">
+              <td style="background: #1e40af url('https://mi-dominio.com/gradient.png') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
                   <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
@@ -133,8 +133,8 @@ mensaje.add_alternative(f"""
             </tr>
             <tr>
               <td style="padding: 30px; border-top: 1px solid #e5e7eb; 
-                background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
-                color: #ffffff;"">
+                background: #1e40af url('https://mi-dominio.com/gradient.png') no-repeat center top; background-size: cover;  
+                color: #ffffff;">
                   <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
                       <td align="center">
@@ -145,7 +145,7 @@ mensaje.add_alternative(f"""
                           <span style="color: #9ca3af;"> • </span>
                           <a href="#" style="color: #22d3ee; text-decoration: none;">Administrar Suscripción</a>
                           <span style="color: #9ca3af;"> • </span>
-                          <a href="#" style="color: #22d3ee; text-decoration: none;">Cancelar Suscripción</a>
+                          <a href="https://infototalapp.com/unsubscribe" style="color: #22d3ee; text-decoration: none;">Cancelar Suscripción</a>
                         </p>
                       </td>
                     </tr>
