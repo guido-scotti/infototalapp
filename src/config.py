@@ -18,6 +18,7 @@ LISTA_SUSCRIPTOS = [
 ]
 
 LISTA_NO_SUSCRIPTOS = [
+    "scottigui@gmail.com",
     "guido_scotti@hotmail.com"
 ]
 

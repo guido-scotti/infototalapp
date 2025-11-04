@@ -1,5 +1,8 @@
 ## FUNCIONES AUXILIARES ##
 import requests
+import feedparser
+from config import rss_urls, NOTICIAS_POR_MEDIO
+from auxiliares import limpiar_html, preparar_link
 
 def preparar_link(link):
     return link if link.startswith("http") else None
@@ -55,3 +58,20 @@ def obtener_cotizaciones_dolar():
     except Exception as e:
         print(f"⚠️ Error al obtener cotizaciones del dólar: {e}")
         return "<tr><td colspan='2'>Error al cargar cotizaciones</td></tr>"
+    
+def obtener_noticias():
+    noticias_html = ""
+    for medio, url in rss_urls.items():
+        feed = feedparser.parse(url)
+        entries = feed.entries[:NOTICIAS_POR_MEDIO]
+        if not entries:
+            continue
+        noticias_html += f"<h3 style='color:#004aad;'>{medio}</h3><ul>"
+        for entry in entries:
+            titulo = limpiar_html(entry.get("title", "(Sin título)"))
+            link = preparar_link(entry.get("link", ""))
+            if not link:
+                continue
+            noticias_html += f"<li><a href='{link}' target='_blank'>{titulo}</a></li>"
+        noticias_html += "</ul><br>"
+        return noticias_html
