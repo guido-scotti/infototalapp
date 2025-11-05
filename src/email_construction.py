@@ -105,7 +105,7 @@ def email_suscriptos(noticias_html, cotizaciones_html):
                 </tr>
                 <tr>
                 <td style="padding: 30px; border-top: 1px solid #e5e7eb; 
-                    background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/bannerMail.jpg') no-repeat center top; background-size: cover;  
+                    background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/gradient.png') no-repeat center top; background-size: cover;  
                     color: #ffffff;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tr>
@@ -117,7 +117,7 @@ def email_suscriptos(noticias_html, cotizaciones_html):
                             <span style="color: #9ca3af;"> • </span>
                             <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" style="color: #22d3ee; text-decoration: none;">Administrar Suscripción</a>
                             <span style="color: #9ca3af;"> • </span>
-                            <a href="https://infototalapp.com/unsubscribe" style="color: #22d3ee; text-decoration: none;">Cancelar Suscripción</a>
+                            <a href="https://4c9caead.sibforms.com/serve/MUIFAB8C7TwL6apZNpOiEb8BwwPLMuaRDK8z5XRmFw-Rn1n0TnRpSFnXqwMz4ho4z1FlZyfP_c_pAfGFV13Ye4e2r1Rlqwrms07bEv5HUkzdGS5yfcnnGMD4omYTVJSa0TT9gd3eEBm51YdN_xejdHv66GnKzyJdPEdrcUhu2wcGRZcuIsmCS792wBTfbsFdQ4vw6YxP48RG2Z1t3Q==" style="color: #22d3ee; text-decoration: none;">Cancelar Suscripción</a>
                             </p>
                         </td>
                         </tr>
@@ -157,7 +157,7 @@ def email_no_suscriptos(cotizaciones_html):
             <table width="600" cellpadding="0" cellspacing="0" style="width:100%; background-color: #ffffff;">
                         <!-- Header -->
                 <tr>
-                <td style="background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/gradient.png') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
+                <td style="background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/bannerMail.jpg') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tr>
                         <td>

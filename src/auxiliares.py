@@ -87,7 +87,7 @@ def obtener_noticias():
               <td style="padding: 0 0 16px 0;">
                 <table width="100%" cellpadding="0" cellspacing="0" 
                        style="background-color:#ffffff; border:1px solid #e5e7eb; border-radius:8px;
-                              box-shadow:0 1px 3px rgba(0,0,0,0.08); padding:16px;">
+                              box-shadow:0 1px 3px rgba(0,0,0,0.08); padding:16px; width:100%;">
                   <tr>
                     <td style="font-size:15px; font-weight:600; color:#1e40af; 
                                white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
@@ -136,3 +136,5 @@ def obtener_noticias():
 
     noticias_html += "</table>"
     return noticias_html
+
+
