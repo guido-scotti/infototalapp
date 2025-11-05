@@ -2,7 +2,6 @@
 import requests
 import feedparser
 from config import rss_urls, NOTICIAS_POR_MEDIO
-from auxiliares import limpiar_html, preparar_link
 
 def preparar_link(link):
     return link if link.startswith("http") else None
@@ -59,19 +58,81 @@ def obtener_cotizaciones_dolar():
         print(f"⚠️ Error al obtener cotizaciones del dólar: {e}")
         return "<tr><td colspan='2'>Error al cargar cotizaciones</td></tr>"
     
+
 def obtener_noticias():
-    noticias_html = ""
+    noticias_html = """
+    <table align="center" width="100%" style="max-width:600px;">
+    """
     for medio, url in rss_urls.items():
         feed = feedparser.parse(url)
         entries = feed.entries[:NOTICIAS_POR_MEDIO]
         if not entries:
             continue
-        noticias_html += f"<h3 style='color:#004aad;'>{medio}</h3><ul>"
+
+        noticias_html += f"""
+        <tr><td><h3 style="color:#111827; font-size:18px; margin:24px 0 12px;">📰 {medio}</h3></td></tr>
+        """
+
         for entry in entries:
             titulo = limpiar_html(entry.get("title", "(Sin título)"))
+            descripcion = limpiar_html(entry.get("summary", ""))[:180] + "..." if entry.get("summary") else ""
             link = preparar_link(entry.get("link", ""))
+            categoria = entry.get("tags")[0]["term"] if entry.get("tags") else "General"
+
             if not link:
                 continue
-            noticias_html += f"<li><a href='{link}' target='_blank'>{titulo}</a></li>"
-        noticias_html += "</ul><br>"
-        return noticias_html
+
+            noticias_html += f"""
+            <tr>
+              <td style="padding: 0 0 16px 0;">
+                <table width="100%" cellpadding="0" cellspacing="0" 
+                       style="background-color:#ffffff; border:1px solid #e5e7eb; border-radius:8px;
+                              box-shadow:0 1px 3px rgba(0,0,0,0.08); padding:16px;">
+                  <tr>
+                    <td style="font-size:15px; font-weight:600; color:#1e40af; 
+                               white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                      {titulo}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-size:13px; color:#374151; line-height:1.4; padding:8px 0;">
+                      {descripcion}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:8px;">
+                        <tr>
+                          <td align="left">
+                            <span style="background-color:#dbeafe; color:#1e3a8a; 
+                                         padding:4px 8px; border-radius:12px; font-weight:500; font-size:12px;">
+                              {medio}
+                            </span>
+                          </td>
+                          <td align="right">
+                            <span style="background-color:#ecfdf5; color:#065f46; 
+                                         padding:4px 8px; border-radius:12px; font-weight:500; font-size:12px;">
+                              {categoria}
+                            </span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" style="padding-top:10px;">
+                      <a href="{link}" target="_blank"
+                         style="display:inline-block; background: #1e40af;
+                                color:#ffffff; text-decoration:none; font-weight:600; font-size:13px;
+                                padding:8px 16px; border-radius:6px;">
+                        Leer más →
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            """
+
+    noticias_html += "</table>"
+    return noticias_html

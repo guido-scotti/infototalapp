@@ -19,10 +19,13 @@ def email_suscriptos(noticias_html, cotizaciones_html):
     <html>
     <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                 Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f3f4f6;">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
         <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f3f4f6; padding: 20px 0;">
         <tr>
             <td align="center">
-            <table width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: #ffffff;">
+            <table width="600" cellpadding="0" cellspacing="0" style="width:100%; background-color: #ffffff;">
                         <!-- Header -->
                 <tr>
                 <td style="background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/gradient.png') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
@@ -52,15 +55,15 @@ def email_suscriptos(noticias_html, cotizaciones_html):
                 </td>
                 </tr>                
                 <tr>
-                <td style="padding: 0 30px 30px 30px;">
-                    <table width="100%" cellpadding="0" cellspacing="0" 
-                    style="background: #ABEAA8;
-                    border-radius: 8px; border: 1px solid #86efac;">
+                <td align="center" style="padding: 0 30px 30px 30px;">
+                    <table  cellpadding="0" cellspacing="0" 
+                    style="width:100%; max-width:600px; background:#ABEAA8; border-radius:8px; 
+                    border:1px solid #86efac; text-align:center;">
                     <tr>
                         <td style="padding: 24px;">
                         <table width="100%" cellpadding="0" cellspacing="0">
                             <tr>
-                            <td>
+                            <td align="left">
                                 <h2 style="margin: 0 0 20px 0; font-size: 20px; font-weight: 600; color: #111827;">
                                 💵 Cotización del Dólar
                                 </h2>
@@ -79,7 +82,7 @@ def email_suscriptos(noticias_html, cotizaciones_html):
 
                 <tr>
                 <td style="padding: 30px;">
-                    <h3 style="margin: 0 0 16px 0; font-size: 20px; font-weight: 600; color: #111827;">
+                    <h3 align="center" style="margin: 0 0 16px 0; font-size: 20px; font-weight: 600; color: #111827;">
                     🗞️ Últimas Noticias Seleccionadas
                     </h3>
                     {noticias_html}
@@ -111,7 +114,7 @@ def email_suscriptos(noticias_html, cotizaciones_html):
                             <p style="margin: 0; font-size: 13px;">
                             <a href="#" style="color: #22d3ee; text-decoration: none;">Preferencias</a> 
                             <span style="color: #9ca3af;"> • </span>
-                            <a href="#" style="color: #22d3ee; text-decoration: none;">Administrar Suscripción</a>
+                            <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=a9a361f51fc44f45b15db392cd1a24c3" style="color: #22d3ee; text-decoration: none;">Administrar Suscripción</a>
                             <span style="color: #9ca3af;"> • </span>
                             <a href="https://infototalapp.com/unsubscribe" style="color: #22d3ee; text-decoration: none;">Cancelar Suscripción</a>
                             </p>
