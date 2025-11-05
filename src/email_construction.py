@@ -28,7 +28,7 @@ def email_suscriptos(noticias_html, cotizaciones_html):
             <table width="600" cellpadding="0" cellspacing="0" style="width:100%; background-color: #ffffff;">
                         <!-- Header -->
                 <tr>
-                <td style="background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/gradient.png') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
+                <td style="background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/bannerMail.jpg') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tr>
                         <td>
@@ -98,13 +98,14 @@ def email_suscriptos(noticias_html, cotizaciones_html):
                             <a href="mailto:info@infototalapp.com" style="color: #2563eb; text-decoration: none;">info@infototalapp.com</a>
                         </p>
                         </td>
+
                     </tr>
                     </table>
                 </td>
                 </tr>
                 <tr>
                 <td style="padding: 30px; border-top: 1px solid #e5e7eb; 
-                    background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/gradient.png') no-repeat center top; background-size: cover;  
+                    background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/bannerMail.jpg') no-repeat center top; background-size: cover;  
                     color: #ffffff;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tr>
@@ -114,7 +115,7 @@ def email_suscriptos(noticias_html, cotizaciones_html):
                             <p style="margin: 0; font-size: 13px;">
                             <a href="#" style="color: #22d3ee; text-decoration: none;">Preferencias</a> 
                             <span style="color: #9ca3af;"> • </span>
-                            <a href="https://forms.gle/7JcAgtbXVzjYwqSB7" style="color: #22d3ee; text-decoration: none;">Administrar Suscripción</a>
+                            <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" style="color: #22d3ee; text-decoration: none;">Administrar Suscripción</a>
                             <span style="color: #9ca3af;"> • </span>
                             <a href="https://infototalapp.com/unsubscribe" style="color: #22d3ee; text-decoration: none;">Cancelar Suscripción</a>
                             </p>
@@ -186,15 +187,6 @@ def email_no_suscriptos(cotizaciones_html):
                 </td>
                 </tr>  
                 <tr>
-                <td align="center" style="padding-bottom: 20px;">
-                    <a href="https://forms.gle/EmmHDbXgJY9hV9XV9"
-                    style="display:inline-block; background-color:#009EE3; color:white; padding:15px 30px;
-                    text-decoration:none; border-radius:8px; font-size:18px; margin-top:15px;">
-                    <strong>SUSCRIBIRME GRATIS AHORA</strong>
-                    </a>  
-                </td>
-                </tr>         
-                <tr>
                 <td align="center" style="padding: 0 30px 30px 30px;">
                     <table cellpadding="0" cellspacing="0" 
                     style="width:100%; max-width:600px; background:#ABEAA8; border-radius:8px; 
@@ -217,6 +209,15 @@ def email_no_suscriptos(cotizaciones_html):
                         </td>
                     </tr>
                     </table>
+                </td>
+                </tr>
+                <tr>
+                <td align="center" style="padding-bottom: 20px;">
+                    <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg=="
+                    style="display:inline-block; background-color:#009EE3; color:white; padding:15px 30px;
+                    text-decoration:none; border-radius:8px; font-size:18px; margin-top:15px;">
+                    <strong>SUSCRIBIRME GRATIS AHORA</strong>
+                    </a>  
                 </td>
                 </tr>
 
@@ -244,7 +245,7 @@ def email_no_suscriptos(cotizaciones_html):
                             servicio de <strong>Info Total</strong>.</p>
                             <p style="margin: 0 0 16px 0; font-size: 13px; color: #ffffff;">© 2025 <strong>Info Total</strong>. Todos los derechos pertenecen a sus respectivas fuentes.</p>
                             <p style="margin: 0; font-size: 13px;">
-                            <a href="https://forms.gle/EmmHDbXgJY9hV9XV9" 
+                            <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" 
                             style="color: #22d3ee; text-decoration: none;">Suscribirme ahora</a>
                             </p>
                         </td>

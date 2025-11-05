@@ -10,7 +10,8 @@ EMAIL_ORIGEN = os.getenv("EMAIL_ORIGEN", "info@infototalapp.com") # trae el emai
 
 LISTA_SUSCRIPTOS = [
     "scottigui@gmail.com",
-    "guido_scotti@hotmail.com"
+    "guido_scotti@hotmail.com",
+    "kiaraagustinatort@gmail.com"
     #"alejandroraul.maldonado@gmail.com",
     #"mariano.swidzinski@gmail.com",
     #"aleciojoel@gmail.com"
