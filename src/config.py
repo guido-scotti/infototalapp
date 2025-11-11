@@ -1,6 +1,5 @@
 import os # importa el módulo os para manejar variables de entorno
 from dotenv import load_dotenv
-from auxiliares import obtener_suscriptos
 load_dotenv()
 
 # ================================
@@ -32,9 +31,9 @@ LISTA_NO_SUSCRIPTOS = [
 NOTICIAS_POR_MEDIO = 6  
 
 rss_urls = {      
-    "Ambito Financiero" : "https://www.ambito.com/rss/pages/home.xml",
-    "Ambito Financiero - Economía" : "https://www.ambito.com/rss/pages/economia.xml",
-    "Ambito Financiero - Finanzas" : "https://www.ambito.com/rss/pages/finanzas.xml",    
+    #"Ambito Financiero" : "https://www.ambito.com/rss/pages/home.xml",
+    #"Ambito Financiero - Economía" : "https://www.ambito.com/rss/pages/economia.xml",
+    #"Ambito Financiero - Finanzas" : "https://www.ambito.com/rss/pages/finanzas.xml",    
     #"La Política Online - Noticias": "http://www.lapoliticaonline.com.ar/files/rss/ultimasnoticias.xml",
     #"La Política Online - Economía": "http://www.lapoliticaonline.com.ar/files/rss/economia.xml",
     #"La Política Online - Ciudad": "http://www.lapoliticaonline.com.ar/files/rss/ciudad.xml",

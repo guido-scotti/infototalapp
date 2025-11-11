@@ -3,22 +3,21 @@ from email.message import EmailMessage
 from config import EMAIL_ORIGEN
 
 hoy = datetime.datetime.today().strftime("%d/%m/%Y")
-asunto_email = f"🔥 Informe Diario INFO TOTAL – {hoy}"
+asunto_email = f"¡Tu entrada al mundo cripto!"
 
 # ===================================
 # ARMADO DEL MAIL PARA SUSCRIPTOS
 # ===================================
-def email_suscriptos(noticias_html, cotizaciones_html):
+def email_suscriptos():
 
     mensaje = EmailMessage()
     mensaje["Subject"] = asunto_email
     mensaje["From"] = EMAIL_ORIGEN
-    mensaje.set_content("Informe Diario INFO TOTAL – Tu servicio de Finanzas y Economia.")
+    mensaje.set_content("Newsletter de Info Total Cripto – Tu entrada al mundo cripto.")
 
     mensaje.add_alternative(f"""
     <html>
-    <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-                Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f3f4f6;">
+    <body style="margin: 0; padding: 0; font-family: 'Rubik', 'Noto Sans', Arial, sans-serif; background-color: #f3f4f6;">
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
@@ -28,96 +27,41 @@ def email_suscriptos(noticias_html, cotizaciones_html):
             <table width="600" cellpadding="0" cellspacing="0" style="width:100%; background-color: #ffffff;">
                         <!-- Header -->
                 <tr>
-                <td style="background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/bannerMail.jpg') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
+                <td style="background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/bannerCripto.jpg') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
+                </td>
+                </tr>
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tr>
                         <td>
-                            <h1 style="margin: 0 0 8px 0; font-size: 32px; font-weight: 700; color: #ffffff;">INFO TOTAL</h1>
-                            <p style="margin: 0; font-size: 16px; color: #dbeafe;">Tu resumen financiero para arrancar el día informado</p>
-                        </td>
-                        </tr>
-                        <tr>
-                        <td style="padding-top: 20px;">
-                            <p style="margin: 0; font-size: 14px; color: #dbeafe;">📅 {hoy} - Edición Matutina</p>
+                            <h3 style="margin: 0; font-size: 16px; color: #000000; font-family: 'Noto Sans';">Bienvenido a</h3>
+                            <h1 style="margin: 0 0 8px 0; font-size: 32px; font-weight: 700; color: #17664B; font-family: 'Rubik';">INFO TOTAL CRIPTO</h1>
+                            <p style="margin: 0; font-size: 16px; color: #EFC223; font-family: 'Rubik';">Tu puerta de entrada al mundo cripto.</p>
                         </td>
                         </tr>
                     </table>
-                </td>
-                </tr>
-
                 <tr>
                 <td style="padding: 30px;">
-                    <h2 style="margin: 0 0 12px 0; font-size: 22px; font-weight: 600; color: #111827;">¡Buenos días, Suscriptor!</h2>
-                    <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4b5563;">
-                    Acá está tu resumen personalizado de las noticias más relevantes del día. 
-                    ¡Gracias por ser parte de la comunidad Info Total!
+                    <h2 style="margin: 0 0 12px 0; font-size: 22px; font-weight: 600; color: #111827; font-family: 'Noto Sans';">Hola!</h2>
+                    <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4b5563; font-family: 'Noto Sans';">
+                    Te invitamos a suscribirte a este informe de <span style="color: #17664B;">INFO TOTAL CRIPTO</span>, en el cual traeremos noticias del mundo cripto, 
+                    guías sobre cómo invertir, valores de cambio, y más!
                     </p>
                 </td>
-                </tr>                
-                <tr>
-                <td align="center" style="padding: 0 30px 30px 30px;">
-                    <table cellpadding="0" cellspacing="0" 
-                    style="width:100%; max-width:600px; background:#ABEAA8; border-radius:8px; 
-                    border:1px solid #86efac; text-align:center;">
+                </tr> 
                     <tr>
-                        <td style="padding: 24px;">
-                        <table width="100%" cellpadding="0" cellspacing="0">
-                            <tr>
-                            <td align="left">
-                                <h2 style="margin: 0 0 20px 0; font-size: 20px; font-weight: 600; color: #111827;">
-                                💵 Cotización del Dólar
-                                </h2>
-                            </td>
-                            <td align="right">
-                                <p style="margin: 0; font-size: 14px; color: #4b5563;">{hoy}</p>
-                            </td>
-                            </tr>
-                            {cotizaciones_html}
-                        </table>
+                        <td align="center" style="margin: 0 auto; padding-bottom: 20px; border: 1px solid #000000;">
                         </td>
-                    </tr>
-                    </table>
-                </td>
-                </tr>
-
+                    </tr>                     
                 <tr>
-                <td style="padding: 30px;">
-                    <h3 align="center" style="margin: 0 0 16px 0; font-size: 20px; font-weight: 600; color: #111827;">
-                    🗞️ Últimas Noticias Seleccionadas
-                    </h3>
-                    {noticias_html}
-                </td>
-                </tr>
-                <tr>
-                <td style="padding: 0 30px 30px 30px;">
-                    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 16px;">
-                    <tr>
-                        <td align="center">
-                        <p style="margin: 0; font-size: 14px; color: #4b5563;">
-                            <strong>¿Preguntas o comentarios?</strong> Contáctanos en 
-                            <a href="mailto:info@infototalapp.com" style="color: #2563eb; text-decoration: none;">info@infototalapp.com</a>
-                        </p>
-                        </td>
-
-                    </tr>
-                    </table>
-                </td>
-                </tr>
-                <tr>
-                <td style="padding: 30px; border-top: 1px solid #e5e7eb; 
-                    background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/gradient.png') no-repeat center top; background-size: cover;  
-                    color: #ffffff;">
+                <td style="padding: 30px; border-top: 1px solid #17664B; 
+                    background-color: #17664B; color: #ffffff;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tr>
                         <td align="center">
-                            <p style="margin: 0 0 8px 0; font-size: 13px; color: #ffffff;">Has recibido este correo porque estás suscrito a <strong>Info Total</strong></p>
-                            <p style="margin: 0 0 16px 0; font-size: 13px; color: #ffffff;">© 2025 <strong>Info Total</strong>. Todos los derechos pertenecen a sus respectivas fuentes.</p>
-                            <p style="margin: 0; font-size: 13px;">
-                            <a href="#" style="color: #22d3ee; text-decoration: none;">Preferencias</a> 
-                            <span style="color: #9ca3af;"> • </span>
-                            <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" style="color: #22d3ee; text-decoration: none;">Administrar Suscripción</a>
-                            <span style="color: #9ca3af;"> • </span>
-                            <a href="https://4c9caead.sibforms.com/serve/MUIFAB8C7TwL6apZNpOiEb8BwwPLMuaRDK8z5XRmFw-Rn1n0TnRpSFnXqwMz4ho4z1FlZyfP_c_pAfGFV13Ye4e2r1Rlqwrms07bEv5HUkzdGS5yfcnnGMD4omYTVJSa0TT9gd3eEBm51YdN_xejdHv66GnKzyJdPEdrcUhu2wcGRZcuIsmCS792wBTfbsFdQ4vw6YxP48RG2Z1t3Q==" style="color: #22d3ee; text-decoration: none;">Cancelar Suscripción</a>
+                            <h1 style="margin: 0 0 8px 0; font-size: 24px; font-weight: 700; color: #00000; font-family: 'Rubik';">¡Contáctanos!</h1>
+                            <p> Espacio para logos de redes sociales </p>
+                            <p style="margin: 0 0 16px 0; font-size: 13px; color: #00000;">© 2025 <strong>Info Total</strong>. Todos los derechos pertenecen a sus respectivas fuentes.</p>
+                            <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" style="color: #EFC223; text-decoration: none;">Suscribirse ahora</a>
                             </p>
                         </td>
                         </tr>
@@ -142,7 +86,7 @@ def email_no_suscriptos(cotizaciones_html):
     mensaje = EmailMessage()
     mensaje["Subject"] = asunto_email
     mensaje["From"] = EMAIL_ORIGEN
-    mensaje.set_content("Versión promocional del Informe Diario de Finanzas y Economia Info Total – Sumate al servicio completo.")
+    mensaje.set_content("Versión promocional del Newsletter de INFO TOTAL CRIPTO – Sumate al servicio completo.")
 
     mensaje.add_alternative(f"""
     <html>
