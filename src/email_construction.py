@@ -85,33 +85,28 @@ def email_suscriptos():
                             ¡Contáctanos!
                         </h1>
 
-                        <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin-bottom: 20px;">
+                        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0">
                             <tr>
-                            <!-- Instagram -->
-                            <td align="center" style="padding: 0 10px;">
-                                <a href="https://www.instagram.com/infototalcripto/" target="_blank">
-                                <img src="https://guido-scotti.github.io/infototalapp/src/img/instagramLogo.jpg" 
-                                    alt="Instagram" width="60" style="display:block; border:0;">
+                                <td align="center" style="padding: 0 6px;">
+                                <a href="https://www.instagram.com/infototalcripto/" target="_blank" style="display:inline-block;">
+                                    <img src="https://guido-scotti.github.io/infototalapp/src/img/instagramLogo.jpg" width="32" height="32" alt="Instagram"
+                                        style="display:block; border:0; background-color:#17664B;">
                                 </a>
-                            </td>
-
-                            <!-- X  -->
-                            <td align="center" style="padding: 0 10px;">
-                                <a href="https://x.com/infototalcripto" target="_blank">
-                                <img src="https://guido-scotti.github.io/infototalapp/src/img/twitterLogo.png" 
-                                    alt="X (Twitter)" width="30" style="display:block; border:0;">
+                                </td>
+                                <td align="center" style="padding: 0 6px;">
+                                <a href="https://x.com/infototalcripto" target="_blank" style="display:inline-block;">
+                                    <img src="https://guido-scotti.github.io/infototalapp/src/img/twitterLogo.png" width="32" height="32" alt="X"
+                                        style="display:block; border:0;">
                                 </a>
-                            </td>
-
-                            <!-- LinkedIn -->
-                            <td align="center" style="padding: 0 10px;">
-                                <a href="https://www.linkedin.com/company/info-total-cripto/" target="_blank">
-                                <img src="https://guido-scotti.github.io/infototalapp/src/img/linkedinblanco.png" 
-                                    alt="LinkedIn" width="36" style="display:block; border:0;">
+                                </td>
+                                <td align="center" style="padding: 0 6px;">
+                                <a href="https://www.linkedin.com/company/infototalcripto/" target="_blank" style="display:inline-block;">
+                                    <img src="https://guido-scotti.github.io/infototalapp/src/img/linkedinblanco.png" width="32" height="32" alt="LinkedIn"
+                                        style="display:block; border:0;">
                                 </a>
-                            </td>
+                                </td>
                             </tr>
-                        </table>
+                            </table>
 
                         <!-- derechos -->
                         <p style="margin: 0 0 6px 0; font-size: 13px; color: #ffffffcc; font-family: Verdana, sans-serif;">
