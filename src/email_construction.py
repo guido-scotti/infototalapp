@@ -91,7 +91,7 @@ def email_suscriptos():
                             <td align="center" style="padding: 0 10px;">
                                 <a href="https://www.instagram.com/infototalcripto/" target="_blank">
                                 <img src="https://guido-scotti.github.io/infototalapp/src/img/instagramLogo.jpg" 
-                                    alt="Instagram" width="42" style="display:block; border:0;">
+                                    alt="Instagram" width="60" style="display:block; border:0;">
                                 </a>
                             </td>
 
