@@ -84,7 +84,7 @@ def email_suscriptos():
                         <td align="center">
                             <h1 style="margin: 0 0 8px 0; font-size: 24px; font-weight: 700; color: #00000; font-family: 'Trebuchet MS';">¡Contáctanos!</h1>
                             <tr>
-                                <td align="center" style="padding: 30px 0 10px 0;">
+                                <td align="center" style="padding: 20px 0 10px 0;">
                                     <table cellpadding="0" cellspacing="0" border="0">
                                     <tr>
                                         <!-- Instagram -->
@@ -114,7 +114,7 @@ def email_suscriptos():
                                     </table>
                                 </td>
                             </tr>
-                            <p style="margin: 0 0 16px 0; font-size: 13px; color: #00000; font-family: 'Verdana';">© 2025 <strong>Info Total Cripto</strong>. Todos los derechos pertenecen a sus respectivas fuentes.</p>
+                            <p style="margin: 0 0 10px 0; font-size: 13px; color: #00000; font-family: 'Verdana';">© 2025 <strong>Info Total Cripto</strong>. Todos los derechos pertenecen a sus respectivas fuentes.</p>
                             <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" style="color: #EFC223;">Suscribirse ahora</a>
                             </p>
                         </td>
