@@ -76,49 +76,55 @@ def email_suscriptos():
                             </a>
                         </td>
                     </tr>              
-                <tr>
-                <td style="padding: 30px; border-top: 1px solid #17664B; 
-                    background-color: #17664B; color: #ffffff;">
-                    <table width="100%" cellpadding="0" cellspacing="0">
-                        <tr>
+               <tr>
+                <td style="padding: 30px; background-color: #17664B; color: #ffffff; text-align: center;">
+                    <table width="100%" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                    <tr>
                         <td align="center">
-                            <h1 style="margin: 0 0 8px 0; font-size: 24px; font-weight: 700; color: #00000; font-family: 'Trebuchet MS';">¡Contáctanos!</h1>
+                        <h1 style="margin: 0 0 16px 0; font-size: 24px; font-weight: 700; font-family: 'Trebuchet MS';">
+                            ¡Contáctanos!
+                        </h1>
+
+                        <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin-bottom: 20px;">
                             <tr>
-                                <td align="center" style="padding: 20px 0 10px 0;">
-                                    <table cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                        <!-- Instagram -->
-                                        <td align="center" style="padding: 0 10px;">
-                                        <a href="https://www.instagram.com/infototalcripto/" target="_blank">
-                                            <img src="https://guido-scotti.github.io/infototalapp/src/img/instagramLogo.png" 
-                                                alt="Instagram" width="32" style="display:block; border:0;">
-                                        </a>
-                                        </td>
+                            <!-- Instagram -->
+                            <td align="center" style="padding: 0 10px;">
+                                <a href="https://www.instagram.com/infototalcripto/" target="_blank">
+                                <img src="https://guido-scotti.github.io/infototalapp/src/img/instagramLogo.jpg" 
+                                    alt="Instagram" width="30" style="display:block; border:0;">
+                                </a>
+                            </td>
 
-                                        <!-- X (Twitter) -->
-                                        <td align="center" style="padding: 0 10px;">
-                                        <a href="https://x.com/infototalcripto" target="_blank">
-                                            <img src="https://guido-scotti.github.io/infototalapp/src/img/twitterLogo.png" 
-                                                alt="X (Twitter)" width="32" style="display:block; border:0;">
-                                        </a>
-                                        </td>
+                            <!-- X  -->
+                            <td align="center" style="padding: 0 10px;">
+                                <a href="https://x.com/infototalcripto" target="_blank">
+                                <img src="https://guido-scotti.github.io/infototalapp/src/img/twitterLogo.png" 
+                                    alt="X (Twitter)" width="30" style="display:block; border:0;">
+                                </a>
+                            </td>
 
-                                        <!-- LinkedIn -->
-                                        <td align="center" style="padding: 0 10px;">
-                                        <a href="https://www.linkedin.com/company/info-total-cripto/" target="_blank">
-                                            <img src="https://guido-scotti.github.io/infototalapp/src/img/linkedinblanco.png" 
-                                                alt="LinkedIn" width="32" style="display:block; border:0;">
-                                        </a>
-                                        </td>
-                                    </tr>
-                                    </table>
-                                </td>
+                            <!-- LinkedIn -->
+                            <td align="center" style="padding: 0 10px;">
+                                <a href="https://www.linkedin.com/company/info-total-cripto/" target="_blank">
+                                <img src="https://guido-scotti.github.io/infototalapp/src/img/linkedinblanco.png" 
+                                    alt="LinkedIn" width="36" style="display:block; border:0;">
+                                </a>
+                            </td>
                             </tr>
-                            <p style="margin: 0 0 10px 0; font-size: 13px; color: #00000; font-family: 'Verdana';">© 2025 <strong>Info Total Cripto</strong>. Todos los derechos pertenecen a sus respectivas fuentes.</p>
-                            <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" style="color: #EFC223;">Suscribirse ahora</a>
-                            </p>
+                        </table>
+
+                        <!-- derechos -->
+                        <p style="margin: 0 0 6px 0; font-size: 13px; color: #ffffffcc; font-family: Verdana, sans-serif;">
+                            © 2025 <strong>Info Total Cripto</strong>. Todos los derechos pertenecen a sus respectivas fuentes.
+                        </p>
+
+                        <!-- link suscripción -->
+                        <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg=="
+                            style="color: #EFC223; text-decoration: none; font-size: 13px; font-family: Verdana, sans-serif;">
+                            Suscribirse ahora
+                        </a>
                         </td>
-                        </tr>
+                    </tr>
                     </table>
                 </td>
                 </tr>
