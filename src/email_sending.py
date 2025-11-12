@@ -13,7 +13,8 @@ API_KEY_BREVO = "TU_API_KEY"
 EMAIL_ORIGEN = "info@infototalapp.com"
 LISTA_ID = 3  # ID de lista de Brevo
 hoy = datetime.datetime.today().strftime("%d/%m/%Y")
-asunto_email = f"🔥 Informe Diario INFO TOTAL – {hoy}"
+asunto_email = f"¡Tu entrada al mundo cripto!"
+
 
 # =============================
 # FUNCIÓN DE ENVÍO DE EMAIL

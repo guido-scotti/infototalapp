@@ -12,14 +12,14 @@ from email_construction import email_no_suscriptos
 from email_sending import enviar_email
 
 hoy = datetime.datetime.today().strftime("%d/%m/%Y")
-asunto_email = f"🔥 Informe Diario INFO TOTAL – {hoy}"
+asunto_email = f"¡Tu entrada al mundo cripto!"
 
 cotizaciones_html = obtener_cotizaciones_dolar()
 
 # ================================
 # LLAMADO A LA FUNCIÓN DE EMAIL
 # ================================
-mensaje = email_no_suscriptos(cotizaciones_html)
+mensaje = email_no_suscriptos()
 
 # ================================
 # ENVIO POR BREVO

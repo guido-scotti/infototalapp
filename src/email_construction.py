@@ -17,51 +17,105 @@ def email_suscriptos():
 
     mensaje.add_alternative(f"""
     <html>
-    <body style="margin: 0; padding: 0; font-family: 'Rubik', 'Noto Sans', Arial, sans-serif; background-color: #f3f4f6;">
+    <body style="margin: 0; padding: 0; font-family: 'Trebuchet MS', 'Verdana', 'Arial', sans-serif; background-color: #ffffff;">
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
-        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f3f4f6; padding: 20px 0;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff; padding: 20px 0;">
         <tr>
             <td align="center">
             <table width="600" cellpadding="0" cellspacing="0" style="width:100%; background-color: #ffffff;">
                         <!-- Header -->
                 <tr>
-                <td style="background: #1e40af url('https://raw.githubusercontent.com/guido-scotti/totalinfoapp/main/src/img/bannerCripto.jpg') no-repeat center top; background-size: cover; padding: 40px 30px; color: #ffffff;">
+                <td style="background-color: #17664B; padding: 0; text-align: center;">
+                    <img src="https://guido-scotti.github.io/infototalapp/src/img/bannerCripto.png"
+                        alt="Banner Info Total Cripto"
+                        style="width: 100%; display: block; border: 0;">
                 </td>
                 </tr>
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tr>
-                        <td>
-                            <h3 style="margin: 0; font-size: 16px; color: #000000; font-family: 'Noto Sans';">Bienvenido a</h3>
-                            <h1 style="margin: 0 0 8px 0; font-size: 32px; font-weight: 700; color: #17664B; font-family: 'Rubik';">INFO TOTAL CRIPTO</h1>
-                            <p style="margin: 0; font-size: 16px; color: #EFC223; font-family: 'Rubik';">Tu puerta de entrada al mundo cripto.</p>
+                        <td style="padding-left: 30px; padding-top: 30px; padding-bottom: 30px;">
+                            <h3 style="margin: 0; font-size: 18px; font-weight: light; color: #000000; font-family: 'Verdana';">Bienvenido a</h3>
+                            <h1 style="margin: 0; font-size: 38px; font-weight: bold; color: #17664B; font-family: 'Trebuchet MS';">INFO TOTAL CRIPTO</h1>
+                            <p style="margin: 0; font-size: 18px; font-weight: bold; color: #EFC223; font-family: 'Trebuchet MS';">Tu puerta de entrada al mundo cripto.</p>
                         </td>
                         </tr>
-                    </table>
+                    </table> 
+                            
                 <tr>
                 <td style="padding: 30px;">
-                    <h2 style="margin: 0 0 12px 0; font-size: 22px; font-weight: 600; color: #111827; font-family: 'Noto Sans';">Hola!</h2>
-                    <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4b5563; font-family: 'Noto Sans';">
-                    Te invitamos a suscribirte a este informe de <span style="color: #17664B;">INFO TOTAL CRIPTO</span>, en el cual traeremos noticias del mundo cripto, 
+                    <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #000000; font-family: 'Verdana';">Hola!</h2>
+                    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #000000; font-family: 'Verdana';">
+                    Te invitamos a suscribirte a este informe de <span style="color: #17664B; font-weight: bold;">INFO TOTAL CRIPTO</span>, en el cual traeremos noticias del mundo cripto, 
                     guías sobre cómo invertir, valores de cambio, y más!
                     </p>
                 </td>
-                </tr> 
+                </tr>  
+                
                     <tr>
-                        <td align="center" style="margin: 0 auto; padding-bottom: 20px; border: 1px solid #000000;">
+                        <td align="center" style="padding: 20px 0;">
+                            <table width="80%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="border-top:1px solid #000000; font-size:0; line-height:0;">&nbsp;</td>
+                                </tr>
+                            </table>
                         </td>
-                    </tr>                     
+                    </tr>   
+
+                    <tr>
+                        <td align="center" style="padding: 0 30px 30px 30px;">
+                            <h1 style="margin: 20px 0 10px 0; font-size: 28px; font-weight: 600; color: #000000; font-family: 'Trebuchet MS';">
+                            ¡La suscripción es gratuita!
+                            </h1>
+
+                            <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg=="
+                            style="display:inline-block; background-color:#17664B; color:white; padding:15px 30px;
+                            text-decoration:none; border-radius:22px; font-size:18px; margin-top:15px; margin-bottom:15px; font-family: 'Trebuchet MS';">
+                            <strong>SUSCRIBIRME AHORA</strong>
+                            </a>
+                        </td>
+                    </tr>              
                 <tr>
                 <td style="padding: 30px; border-top: 1px solid #17664B; 
                     background-color: #17664B; color: #ffffff;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tr>
                         <td align="center">
-                            <h1 style="margin: 0 0 8px 0; font-size: 24px; font-weight: 700; color: #00000; font-family: 'Rubik';">¡Contáctanos!</h1>
-                            <p> Espacio para logos de redes sociales </p>
-                            <p style="margin: 0 0 16px 0; font-size: 13px; color: #00000;">© 2025 <strong>Info Total</strong>. Todos los derechos pertenecen a sus respectivas fuentes.</p>
-                            <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" style="color: #EFC223; text-decoration: none;">Suscribirse ahora</a>
+                            <h1 style="margin: 0 0 8px 0; font-size: 24px; font-weight: 700; color: #00000; font-family: 'Trebuchet MS';">¡Contáctanos!</h1>
+                            <tr>
+                                <td align="center" style="padding: 30px 0 10px 0;">
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <!-- Instagram -->
+                                        <td align="center" style="padding: 0 10px;">
+                                        <a href="https://www.instagram.com/infototalcripto/" target="_blank">
+                                            <img src="https://guido-scotti.github.io/infototalapp/src/img/instagramLogo.png" 
+                                                alt="Instagram" width="32" style="display:block; border:0;">
+                                        </a>
+                                        </td>
+
+                                        <!-- X (Twitter) -->
+                                        <td align="center" style="padding: 0 10px;">
+                                        <a href="https://x.com/infototalcripto" target="_blank">
+                                            <img src="https://guido-scotti.github.io/infototalapp/src/img/twitterLogo.png" 
+                                                alt="X (Twitter)" width="32" style="display:block; border:0;">
+                                        </a>
+                                        </td>
+
+                                        <!-- LinkedIn -->
+                                        <td align="center" style="padding: 0 10px;">
+                                        <a href="https://www.linkedin.com/company/info-total-cripto/" target="_blank">
+                                            <img src="https://guido-scotti.github.io/infototalapp/src/img/linkedinblanco.png" 
+                                                alt="LinkedIn" width="32" style="display:block; border:0;">
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <p style="margin: 0 0 16px 0; font-size: 13px; color: #00000; font-family: 'Verdana';">© 2025 <strong>Info Total Cripto</strong>. Todos los derechos pertenecen a sus respectivas fuentes.</p>
+                            <a href="https://4c9caead.sibforms.com/serve/MUIFABbYSgP18fasIENUcwcDDnI89HEis5gHeny8Qx5A2g2aH5SL-axPFvL9yzAgHofT8EwQEzvNpMbNsJ3emsWTlUuDlDldJtOsf72wNmjsy7gQU70vyINhhhdP-j7v4cBLHByqkPsdJ65l3R5s7lCx7-lKQFY3hpNLutyAnoZA5zl8E7Fc2Ln2YA-0Tb38FLzHoppC3q9Nm50_tg==" style="color: #EFC223;">Suscribirse ahora</a>
                             </p>
                         </td>
                         </tr>
